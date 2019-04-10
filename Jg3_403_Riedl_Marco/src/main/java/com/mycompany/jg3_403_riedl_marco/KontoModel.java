@@ -6,6 +6,7 @@ import javax.swing.AbstractListModel;
 
 public class KontoModel extends AbstractListModel{
 
+    private int kontostand;
     private ArrayList<KontoBenutzer> accounts = new ArrayList<>();
     
     @Override
@@ -21,6 +22,18 @@ public class KontoModel extends AbstractListModel{
     public void add(KontoBenutzer k){
         accounts.add(k);
         fireIntervalAdded(this, accounts.size()-1, accounts.size()-1);
+    }
+    public synchronized int removeMoney(int money) throws InterruptedException{
+        while(money > kontostand){
+            wait();
+        }
+        this.kontostand = money;
+        return kontostand;
+    }
+    
+    public synchronized int addMoney(int money){
+        this.kontostand += money;
+        return kontostand;
     }
     
 }

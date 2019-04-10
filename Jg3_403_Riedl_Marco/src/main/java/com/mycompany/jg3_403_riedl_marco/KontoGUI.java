@@ -28,7 +28,6 @@ public class KontoGUI extends javax.swing.JFrame {
         jPopupMenu1 = new javax.swing.JPopupMenu();
         miAddUser = new javax.swing.JMenuItem();
         miPerformAccountTest = new javax.swing.JMenuItem();
-        jMenuItem1 = new javax.swing.JMenuItem();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane3 = new javax.swing.JScrollPane();
         liUser = new javax.swing.JList<>();
@@ -56,8 +55,6 @@ public class KontoGUI extends javax.swing.JFrame {
             }
         });
         jPopupMenu1.add(miPerformAccountTest);
-
-        jMenuItem1.setText("jMenuItem1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -153,7 +150,7 @@ public class KontoGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void miPerformAccountTestActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miPerformAccountTestActionPerformed
-        // TODO add your handling code here:
+         
     }//GEN-LAST:event_miPerformAccountTestActionPerformed
 
     private void miAddUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miAddUserActionPerformed
@@ -200,7 +197,6 @@ public class KontoGUI extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
