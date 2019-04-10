@@ -1,4 +1,4 @@
-package account;
+package com.mycompany.jg3_403_riedl_marco;
 
 public class Account {
     private int money;
